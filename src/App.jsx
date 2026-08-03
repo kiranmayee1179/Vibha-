@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Filters from './components/Filters';
 import ProductList from './components/ProductList';
@@ -14,6 +14,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('All');
+  const navigate = useNavigate();
 
   const addToCart = (product) => {
     setCart([...cart, product]);
@@ -45,7 +46,7 @@ const App = () => {
         });
 
   return (
-    <Router>
+    <>
       <Navbar
         cartCount={cart.length}
         setCategory={setCategory}
@@ -222,7 +223,7 @@ const App = () => {
           element={<Cart cart={cart} removeFromCart={removeFromCart} />}
         />
       </Routes>
-    </Router>
+    </>
   );
 };
 
