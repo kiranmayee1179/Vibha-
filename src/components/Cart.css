@@ -1,0 +1,159 @@
+.cart-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 14px;
+
+  transition: 0.3s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cart-img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #faf9f6;
+  padding: 5px;
+}
+
+.cart-details {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #c2a878;
+}
+
+.remove-btn {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.remove-btn:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-form {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 8px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.myntra-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.myntra-input:focus {
+  border-bottom: 2px solid #ff3f6c;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff3f6c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.confirm-btn:hover {
+  background: #e6335f;
+}
+
+.cancel-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.order-success {
+  text-align: center;
+  color: green;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.order-success-box {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.order-items {
+  margin-top: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.order-total {
+  margin-top: 20px;
+  color: #ff3f6c;
+}
